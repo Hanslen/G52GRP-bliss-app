@@ -1,0 +1,54 @@
+{
+    "menus": [
+        {
+            "id" : 1,
+            "name" : "Before Birth",
+            "articleIDs" : [1, 2, 3],
+            "subMenus" : []
+        },
+        {
+            "id" : 2,
+            "name" : "In Hospital",
+            "articleIDs" : [],
+            "subMenus" : [
+                {
+                    "id" : 3,
+                    "name" : "You and your baby",
+                    "articleIDs" : [1, 2, 3]
+                },
+                {
+                    "id" : 4,
+                    "name" : "About neonatal care",
+                    "articleIDs" : [1, 2, 3]
+                },
+                {
+                    "id" : 5,
+                    "name" : "Visiting your baby",
+                    "articleIDs" : [1, 2, 3]
+                }
+            ]
+        },
+        {
+            "id" : 6,
+            "name" : "Going Home",
+            "articleIDs" : [],
+            "subMenus" : [
+                {
+                    "id" : 7,
+                    "name" : "Going home with your baby",
+                    "articleIDs" : [1, 1, 2]
+                },
+                {
+                    "id" : 8,
+                    "name" : "Preparing to go home",
+                    "articleIDs" : [1, 2, 3]
+                },
+                {
+                    "id" : 9,
+                    "name" : "Before you leave",
+                    "articleIDs" : [1, 2, 3]
+                }
+            ]
+        }
+    ]
+}

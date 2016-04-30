@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favouriteCell" rowHeight="141" id="cTn-63-8HG" customClass="favouriteTableViewCell" customModule="bliss" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="141"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cTn-63-8HG" id="8cT-GV-Gzh">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="140.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g2-Bo-BOe">
+                        <rect key="frame" x="11" y="8" width="323" height="124"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favourite" translatesAutoresizingMaskIntoConstraints="NO" id="U2r-Sl-jN6">
+                                <rect key="frame" x="8" y="17" width="89" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="YmF-dx-8sc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p70-mx-Cgp">
+                                <rect key="frame" x="105" y="42" width="210" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="q5m-Nx-FL5"/>
+                                    <constraint firstAttribute="height" constant="74" id="w4X-x6-hy9"/>
+                                </constraints>
+                                <string key="text">The Great Run Series is a well established and excellent set of running events held up and down the UK throughout the year, with distances to suit everyone!</string>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Great Run Series" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8D-Pc-MYH">
+                                <rect key="frame" x="104" y="0.0" width="211" height="47"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.4549019608" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="p70-mx-Cgp" firstAttribute="centerX" secondItem="y8D-Pc-MYH" secondAttribute="centerX" id="2Qp-Ma-NFc"/>
+                            <constraint firstItem="y8D-Pc-MYH" firstAttribute="top" secondItem="8g2-Bo-BOe" secondAttribute="top" id="5NI-nH-6Fg"/>
+                            <constraint firstItem="y8D-Pc-MYH" firstAttribute="leading" secondItem="U2r-Sl-jN6" secondAttribute="trailing" constant="7" id="EkN-AL-btN"/>
+                            <constraint firstItem="U2r-Sl-jN6" firstAttribute="centerY" secondItem="8g2-Bo-BOe" secondAttribute="centerY" id="GW3-wH-ss4"/>
+                            <constraint firstAttribute="bottom" secondItem="y8D-Pc-MYH" secondAttribute="bottom" constant="77" id="Iaf-CA-akh"/>
+                            <constraint firstItem="U2r-Sl-jN6" firstAttribute="leading" secondItem="8g2-Bo-BOe" secondAttribute="leadingMargin" id="Kzv-xf-SGi"/>
+                            <constraint firstAttribute="trailing" secondItem="p70-mx-Cgp" secondAttribute="trailing" constant="8" id="Lsd-Vx-8Lt"/>
+                            <constraint firstAttribute="trailing" secondItem="y8D-Pc-MYH" secondAttribute="trailing" constant="8" id="QAA-6M-65w"/>
+                            <constraint firstItem="p70-mx-Cgp" firstAttribute="bottom" secondItem="U2r-Sl-jN6" secondAttribute="bottom" constant="10" id="TGI-gF-Oac"/>
+                            <constraint firstItem="p70-mx-Cgp" firstAttribute="top" secondItem="8g2-Bo-BOe" secondAttribute="top" constant="42" id="gOg-iP-b2D"/>
+                            <constraint firstItem="p70-mx-Cgp" firstAttribute="leading" secondItem="U2r-Sl-jN6" secondAttribute="trailing" constant="8" symbolic="YES" id="qNC-KQ-4gk"/>
+                            <constraint firstItem="U2r-Sl-jN6" firstAttribute="top" secondItem="8g2-Bo-BOe" secondAttribute="top" constant="17" id="xCl-mN-SnW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QAA-6M-65w"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8g2-Bo-BOe" secondAttribute="trailing" constant="8" id="2S5-NT-WhT"/>
+                    <constraint firstItem="8g2-Bo-BOe" firstAttribute="top" secondItem="8cT-GV-Gzh" secondAttribute="top" constant="8" id="5ls-FY-Cdp"/>
+                    <constraint firstItem="8g2-Bo-BOe" firstAttribute="leading" secondItem="8cT-GV-Gzh" secondAttribute="leading" constant="11" id="cQd-oX-fIf"/>
+                    <constraint firstAttribute="bottom" secondItem="8g2-Bo-BOe" secondAttribute="bottom" constant="8.5" id="h7T-gs-Qvv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="intro" destination="p70-mx-Cgp" id="luH-Ep-glx"/>
+                <outlet property="picForArticle" destination="U2r-Sl-jN6" id="Vn2-gl-wRb"/>
+                <outlet property="title" destination="y8D-Pc-MYH" id="S10-jq-GSg"/>
+            </connections>
+            <point key="canvasLocation" x="418" y="205.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="favourite" width="1218" height="1216"/>
+    </resources>
+</document>

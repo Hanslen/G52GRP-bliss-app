@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactUsCell" rowHeight="50" id="WPg-f9-bQr" customClass="contactUsTableViewCell" customModule="bliss" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WPg-f9-bQr" id="woM-sP-Cvh">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bliss Family Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlI-zH-T4w">
+                        <rect key="frame" x="14" y="7" width="216" height="23"/>
+                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0500 618140" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1G-yH-Y0b">
+                        <rect key="frame" x="14" y="26" width="211" height="21"/>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCd-ZW-ktG">
+                        <rect key="frame" x="320" y="12" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="1Rd-gk-e4R"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="phone_filled"/>
+                        <connections>
+                            <action selector="phoneTyped:" destination="WPg-f9-bQr" eventType="touchUpInside" id="6Qf-NL-itg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gCd-ZW-ktG" firstAttribute="top" secondItem="woM-sP-Cvh" secondAttribute="topMargin" constant="4" id="1zP-q7-kTt"/>
+                    <constraint firstItem="gCd-ZW-ktG" firstAttribute="leading" secondItem="a1G-yH-Y0b" secondAttribute="trailing" constant="95" id="2Bs-K8-AJR"/>
+                    <constraint firstItem="gCd-ZW-ktG" firstAttribute="leading" secondItem="dlI-zH-T4w" secondAttribute="trailing" constant="90" id="4k3-ij-nzW"/>
+                    <constraint firstItem="dlI-zH-T4w" firstAttribute="leading" secondItem="a1G-yH-Y0b" secondAttribute="leading" id="9Hh-vh-WWG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gCd-ZW-ktG" secondAttribute="trailing" constant="5" id="Ea5-rW-99P"/>
+                    <constraint firstItem="dlI-zH-T4w" firstAttribute="top" secondItem="woM-sP-Cvh" secondAttribute="topMargin" constant="-1" id="Oex-Vd-6XS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dlI-zH-T4w" secondAttribute="bottom" constant="11.5" id="PGf-c0-F1Z"/>
+                    <constraint firstItem="dlI-zH-T4w" firstAttribute="baseline" secondItem="gCd-ZW-ktG" secondAttribute="firstBaseline" id="UKW-fk-7sp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="a1G-yH-Y0b" secondAttribute="bottom" constant="-5.5" id="UZS-3P-m3v"/>
+                    <constraint firstItem="a1G-yH-Y0b" firstAttribute="top" secondItem="woM-sP-Cvh" secondAttribute="topMargin" constant="18" id="Wye-uI-HqU"/>
+                    <constraint firstItem="dlI-zH-T4w" firstAttribute="leading" secondItem="woM-sP-Cvh" secondAttribute="leadingMargin" constant="6" id="fyN-fp-vbp"/>
+                    <constraint firstItem="gCd-ZW-ktG" firstAttribute="centerY" secondItem="woM-sP-Cvh" secondAttribute="centerY" id="tkW-PC-DHS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="phone" destination="gCd-ZW-ktG" id="n4x-qq-o8X"/>
+                <outlet property="serviceName" destination="dlI-zH-T4w" id="vvK-HG-Cxg"/>
+                <outlet property="serviceNumber" destination="a1G-yH-Y0b" id="pOF-LG-KMl"/>
+            </connections>
+            <point key="canvasLocation" x="435" y="299"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="phone_filled" width="50" height="50"/>
+    </resources>
+</document>

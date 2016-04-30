@@ -1,0 +1,25 @@
+{
+    "articles" : [
+        {
+            "id" : 1,
+            "lastUpdated" : "2015-09-27T21:00:00.000Z",
+            "title" : "Example Article #1",
+            "headerImageUrl" : "https://placehold.it/350x150",
+            "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies laoreet suscipit. Suspendisse potenti. Phasellus posuere gravida risus, in interdum dui placerat condimentum. Vestibulum eget vehicula justo. Morbi nec porta sapien. Integer et finibus urna. Praesent vel arcu mattis, consectetur augue et, ultricies sapien. Vestibulum ante magna, consectetur ac purus id, porttitor suscipit libero. Aliquam pellentesque mi vitae quam commodo vestibulum. Vestibulum id condimentum orci, eget congue ipsum. Donec elementum lectus elementum ipsum commodo scelerisque ut a odio. Vestibulum hendrerit tellus dolor, non auctor est hendrerit in."
+        },
+        {
+            "id" : 2,
+            "lastUpdated" : "2015-09-27T22:00:00.000Z",
+            "title" : "Example Article #2",
+            "headerImageUrl" : "https://placehold.it/350x150",
+            "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies laoreet suscipit. Suspendisse potenti. Phasellus posuere gravida risus, in interdum dui placerat condimentum. Vestibulum eget vehicula justo. Morbi nec porta sapien. Integer et finibus urna. Praesent vel arcu mattis, consectetur augue et, ultricies sapien. Vestibulum ante magna, consectetur ac purus id, porttitor suscipit libero. Aliquam pellentesque mi vitae quam commodo vestibulum. Vestibulum id condimentum orci, eget congue ipsum. Donec elementum lectus elementum ipsum commodo scelerisque ut a odio. Vestibulum hendrerit tellus dolor, non auctor est hendrerit in."
+        },
+        {
+            "id" : 3,
+            "lastUpdated" : "2015-09-27T23:00:00.000Z",
+            "title" : "Example Article #3",
+            "headerImageUrl" : "https://placehold.it/350x150",
+            "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies laoreet suscipit. Suspendisse potenti. Phasellus posuere gravida risus, in interdum dui placerat condimentum. Vestibulum eget vehicula justo. Morbi nec porta sapien. Integer et finibus urna. Praesent vel arcu mattis, consectetur augue et, ultricies sapien. Vestibulum ante magna, consectetur ac purus id, porttitor suscipit libero. Aliquam pellentesque mi vitae quam commodo vestibulum. Vestibulum id condimentum orci, eget congue ipsum. Donec elementum lectus elementum ipsum commodo scelerisque ut a odio. Vestibulum hendrerit tellus dolor, non auctor est hendrerit in."
+        }
+    ]
+}

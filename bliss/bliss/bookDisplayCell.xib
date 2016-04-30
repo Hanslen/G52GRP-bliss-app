@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="bookCell" rowHeight="190" id="Red-K8-e2h" customClass="bookRowTableViewCell" customModule="bliss" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Red-K8-e2h" id="YDB-g9-enq">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXB-kL-te0">
+                        <rect key="frame" x="8" y="142" width="138" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DBV-9Q-GkG"/>
+                            <constraint firstAttribute="width" constant="138" id="vln-6l-asg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiR-Dd-ejl">
+                        <rect key="frame" x="175" y="141" width="137" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="137" id="McJ-aN-ziq"/>
+                            <constraint firstAttribute="height" constant="40" id="yYx-Al-LUu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uR-mo-BE8">
+                        <rect key="frame" x="33" y="8" width="87" height="126"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="126" id="UJh-mE-aCh"/>
+                            <constraint firstAttribute="width" constant="87" id="xEY-MH-tLO"/>
+                        </constraints>
+                        <connections>
+                            <action selector="leftBook:" destination="Red-K8-e2h" eventType="touchUpInside" id="dOd-9d-Ek5"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgN-s2-5bT">
+                        <rect key="frame" x="200" y="8" width="87" height="126"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="87" id="3er-rd-Zzz"/>
+                            <constraint firstAttribute="height" constant="126" id="OrW-lD-EZd"/>
+                        </constraints>
+                        <connections>
+                            <action selector="rightBook:" destination="Red-K8-e2h" eventType="touchUpInside" id="rTj-0V-P0v"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tgN-s2-5bT" secondAttribute="trailing" constant="33" id="DIs-Zu-TaZ"/>
+                    <constraint firstItem="NXB-kL-te0" firstAttribute="leading" secondItem="YDB-g9-enq" secondAttribute="leading" constant="8" id="KI0-mx-yOU"/>
+                    <constraint firstAttribute="trailing" secondItem="JiR-Dd-ejl" secondAttribute="trailing" constant="8" id="QfX-6w-PE5"/>
+                    <constraint firstItem="tgN-s2-5bT" firstAttribute="top" secondItem="YDB-g9-enq" secondAttribute="top" constant="8" id="UQQ-tX-PSG"/>
+                    <constraint firstItem="7uR-mo-BE8" firstAttribute="top" secondItem="YDB-g9-enq" secondAttribute="top" constant="8" id="Y8t-g7-THS"/>
+                    <constraint firstAttribute="bottom" secondItem="JiR-Dd-ejl" secondAttribute="bottom" constant="8.5" id="YEP-An-IVK"/>
+                    <constraint firstAttribute="bottom" secondItem="NXB-kL-te0" secondAttribute="bottom" constant="7.5" id="cVf-v5-DNr"/>
+                    <constraint firstItem="7uR-mo-BE8" firstAttribute="leading" secondItem="YDB-g9-enq" secondAttribute="leading" constant="33" id="kVi-sz-22c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="bookLeft" destination="7uR-mo-BE8" id="hbX-ly-cAT"/>
+                <outlet property="bookLeftLabel" destination="NXB-kL-te0" id="FX2-6Y-fjZ"/>
+                <outlet property="bookRight" destination="tgN-s2-5bT" id="I69-L3-cnT"/>
+                <outlet property="bookRightLabel" destination="JiR-Dd-ejl" id="EGB-sV-KA9"/>
+            </connections>
+            <point key="canvasLocation" x="416" y="252"/>
+        </tableViewCell>
+    </objects>
+</document>

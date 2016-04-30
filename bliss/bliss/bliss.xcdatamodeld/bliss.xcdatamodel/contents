@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="BabyChart" representedClassName=".BabyChart" syncable="YES">
+        <attribute name="month" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Diary" representedClassName=".Diary" syncable="YES">
+        <attribute name="context" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FavouriteArticle" representedClassName=".FavouriteArticle" syncable="YES"/>
+    <entity name="LogUser" representedClassName=".LogUser" syncable="YES">
+        <attribute name="babyImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="babyname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="babyWeight" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faceBookId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="googleId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasComeToWorld" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="twitterId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userImage" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BabyChart" positionX="27" positionY="180" width="128" height="75"/>
+        <element name="Diary" positionX="27" positionY="180" width="128" height="90"/>
+        <element name="FavouriteArticle" positionX="27" positionY="180" width="128" height="45"/>
+        <element name="LogUser" positionX="27" positionY="81" width="128" height="255"/>
+    </elements>
+</model>

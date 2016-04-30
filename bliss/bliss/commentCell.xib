@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="80" id="skb-LX-C0g" customClass="commentCellTableViewCell" customModule="bliss" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="skb-LX-C0g" id="dHC-BK-P2j">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fiB-OG-fsJ">
+                        <rect key="frame" x="-76" y="-42" width="30" height="30"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRc-5q-sVR">
+                        <rect key="frame" x="-51" y="-14" width="20" height="20"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bliss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsQ-IA-5u9">
+                        <rect key="frame" x="66" y="8" width="291" height="21"/>
+                        <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is not comment currently. Waiting for more people comment on it." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZA-Rm-agl">
+                        <rect key="frame" x="66" y="29" width="291" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42.5" id="VmE-mB-H4J"/>
+                            <constraint firstAttribute="width" constant="291" id="gY5-cu-5Ti"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noComment" translatesAutoresizingMaskIntoConstraints="NO" id="PSr-Ke-D9f">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="2iq-8B-RoK"/>
+                            <constraint firstAttribute="height" constant="50" id="TaH-jo-lJA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.050980392159999999" green="0.3803921569" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="PSr-Ke-D9f" firstAttribute="top" secondItem="dHC-BK-P2j" secondAttribute="top" constant="8" id="9GH-Qh-4Af"/>
+                    <constraint firstItem="rZA-Rm-agl" firstAttribute="leading" secondItem="PSr-Ke-D9f" secondAttribute="trailing" constant="8" id="I3f-rP-N44"/>
+                    <constraint firstAttribute="bottom" secondItem="PSr-Ke-D9f" secondAttribute="bottom" constant="21.5" id="MMf-Xt-maV"/>
+                    <constraint firstItem="PSr-Ke-D9f" firstAttribute="leading" secondItem="dHC-BK-P2j" secondAttribute="leading" constant="8" id="TNv-D1-rM7"/>
+                    <constraint firstAttribute="trailing" secondItem="rZA-Rm-agl" secondAttribute="trailing" constant="1" id="Xgd-8M-CbN"/>
+                    <constraint firstAttribute="bottom" secondItem="rZA-Rm-agl" secondAttribute="bottom" constant="8" id="YDE-Qd-cOf"/>
+                    <constraint firstItem="rZA-Rm-agl" firstAttribute="top" secondItem="QsQ-IA-5u9" secondAttribute="bottom" id="eMU-Jt-8aN"/>
+                    <constraint firstItem="QsQ-IA-5u9" firstAttribute="leading" secondItem="PSr-Ke-D9f" secondAttribute="trailing" constant="8" id="lBM-Ir-CDX"/>
+                    <constraint firstAttribute="trailing" secondItem="QsQ-IA-5u9" secondAttribute="trailing" constant="1" id="qg5-Ua-fca"/>
+                    <constraint firstItem="QsQ-IA-5u9" firstAttribute="top" secondItem="dHC-BK-P2j" secondAttribute="top" constant="8" id="tza-4p-p9G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.20784313730000001" green="0.53333333329999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="userComment" destination="rZA-Rm-agl" id="DEP-U6-0cX"/>
+                <outlet property="userIcon" destination="PSr-Ke-D9f" id="Gb8-0u-E4c"/>
+                <outlet property="userName" destination="QsQ-IA-5u9" id="GK0-7o-Xr4"/>
+            </connections>
+            <point key="canvasLocation" x="272" y="334"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="noComment" width="60" height="60"/>
+    </resources>
+</document>
